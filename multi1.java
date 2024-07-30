@@ -1,18 +1,21 @@
-// Java code for thread creation by implementing
+
 // the Runnable Interface
 class Multithreading implements Runnable {
 	public void run()
 	{
-		try {
+try 
+{
 			
-			System.out.println(
-				"Thread  is running");
-		}
-		catch (Exception e) {
-			// Throwing an exception
-			System.out.println("Error");
-		}
+System.out.println("Thread  is running");
+}
+		
+catch (Exception e) 
+	{
+System.out.println("Error");
 	}
+		
+}
+	
 }
 
 // Main Class
@@ -21,8 +24,7 @@ class multi1 {
 	{
 		int n = 6; 
 		for (int i = 0; i < n; i++) {
-			Thread object
-				= new Thread(new Multithreading());
+			Thread object = new Thread(new Multithreading());
 			object.start();
 		}
 	}
